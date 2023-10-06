@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -256,11 +256,17 @@ extends <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.r
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#replace(int,edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTableCell)">replace</a></span>&#8203;(int&nbsp;column,
+       <a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a>&nbsp;cell)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCellLocations(int)">setCellLocations</a></span>&#8203;(int&nbsp;rowIndex)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -416,7 +422,7 @@ extends <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.r
 <div class="block">Returns an array of three elements where [0] is the left
  statement type, [1] is this statement type, and [2] is the
  right statement type. null means either the statement doesn't
- exist or is is an unknown value.</div>
+ exist or is an unknown value.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the assigned values to this statement and its sub-statements</dd>
@@ -435,7 +441,7 @@ extends <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.r
 <a id="copy()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>copy</h4>
 <pre class="methodSignature">public&nbsp;<a href="ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a>&nbsp;copy()</pre>
@@ -447,6 +453,16 @@ extends <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.r
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>copied puzzle element object</dd>
 </dl>
+</li>
+</ul>
+<a id="replace(int,edu.rpi.legup.puzzle.shorttruthtable.ShortTruthTableCell)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>replace</h4>
+<pre class="methodSignature">public&nbsp;<a href="ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a>&nbsp;replace&#8203;(int&nbsp;column,
+                                        <a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a>&nbsp;cell)</pre>
 </li>
 </ul>
 </li>

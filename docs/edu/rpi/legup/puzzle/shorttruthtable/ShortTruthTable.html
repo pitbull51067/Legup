@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,6 +230,13 @@ extends <a href="../../model/Puzzle.html" title="class in edu.rpi.legup.model">P
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValidTextInput(java.lang.String%5B%5D)">isValidTextInput</a></span>&#8203;(java.lang.String[]&nbsp;statements)</code></th>
+<td class="colLast">
+<div class="block">Determines if the given statements are valid for Short Truth Table</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onBoardChange(edu.rpi.legup.model.gameboard.Board)">onBoardChange</a></span>&#8203;(<a href="../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board)</code></th>
 <td class="colLast">
@@ -336,6 +343,24 @@ extends <a href="../../model/Puzzle.html" title="class in edu.rpi.legup.model">P
 <dd><code>columns</code> - the number of columns on the board</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the given dimensions are valid for the given puzzle, false otherwise</dd>
+</dl>
+</li>
+</ul>
+<a id="isValidTextInput(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isValidTextInput</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isValidTextInput&#8203;(java.lang.String[]&nbsp;statements)</pre>
+<div class="block">Determines if the given statements are valid for Short Truth Table</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../model/Puzzle.html#isValidTextInput(java.lang.String%5B%5D)">isValidTextInput</a></code>&nbsp;in class&nbsp;<code><a href="../../model/Puzzle.html" title="class in edu.rpi.legup.model">Puzzle</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>statements</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the statements are valid for Short Truth Table, false otherwise</dd>
 </dl>
 </li>
 </ul>

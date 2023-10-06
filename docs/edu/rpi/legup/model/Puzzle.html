@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":6,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":6,"i26":6,"i27":10,"i28":10,"i29":10,"i30":10,"i31":6,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":6,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":6,"i26":6,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":6,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -460,104 +460,111 @@ implements <a href="observer/IBoardSubject.html" title="interface in edu.rpi.leg
 </td>
 </tr>
 <tr id="i29" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValidTextInput(java.lang.String%5B%5D)">isValidTextInput</a></span>&#8203;(java.lang.String[]&nbsp;statements)</code></th>
+<td class="colLast">
+<div class="block">Checks if the given array of statements is valid text input for the given puzzle</div>
+</td>
+</tr>
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notifyBoardListeners(java.util.function.Consumer)">notifyBoardListeners</a></span>&#8203;(java.util.function.Consumer&lt;? super <a href="observer/IBoardListener.html" title="interface in edu.rpi.legup.model.observer">IBoardListener</a>&gt;&nbsp;algorithm)</code></th>
 <td class="colLast">
 <div class="block">Notifies listeners</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notifyTreeListeners(java.util.function.Consumer)">notifyTreeListeners</a></span>&#8203;(java.util.function.Consumer&lt;? super <a href="observer/ITreeListener.html" title="interface in edu.rpi.legup.model.observer">ITreeListener</a>&gt;&nbsp;algorithm)</code></th>
 <td class="colLast">
 <div class="block">Notifies listeners</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onBoardChange(edu.rpi.legup.model.gameboard.Board)">onBoardChange</a></span>&#8203;(<a href="gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board)</code></th>
 <td class="colLast">
 <div class="block">Callback for when the board puzzleElement changes</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeBoardListener(edu.rpi.legup.model.observer.IBoardListener)">removeBoardListener</a></span>&#8203;(<a href="observer/IBoardListener.html" title="interface in edu.rpi.legup.model.observer">IBoardListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block">Removes a board listener</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeCaseRule(edu.rpi.legup.model.rules.CaseRule)">removeCaseRule</a></span>&#8203;(<a href="rules/CaseRule.html" title="class in edu.rpi.legup.model.rules">CaseRule</a>&nbsp;rule)</code></th>
 <td class="colLast">
 <div class="block">Removes a case rule from this Puzzle</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeContradictionRule(edu.rpi.legup.model.rules.ContradictionRule)">removeContradictionRule</a></span>&#8203;(<a href="rules/ContradictionRule.html" title="class in edu.rpi.legup.model.rules">ContradictionRule</a>&nbsp;rule)</code></th>
 <td class="colLast">
 <div class="block">Remove a contradiction rule from this Puzzle</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeDirectRule(edu.rpi.legup.model.rules.DirectRule)">removeDirectRule</a></span>&#8203;(<a href="rules/DirectRule.html" title="class in edu.rpi.legup.model.rules">DirectRule</a>&nbsp;rule)</code></th>
 <td class="colLast">
 <div class="block">Remove a basic rule from this Puzzle</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeTreeListener(edu.rpi.legup.model.observer.ITreeListener)">removeTreeListener</a></span>&#8203;(<a href="observer/ITreeListener.html" title="interface in edu.rpi.legup.model.observer">ITreeListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
 <div class="block">Removes a tree listener</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBoardView(edu.rpi.legup.ui.boardview.BoardView)">setBoardView</a></span>&#8203;(<a href="../ui/boardview/BoardView.html" title="class in edu.rpi.legup.ui.boardview">BoardView</a>&nbsp;boardView)</code></th>
 <td class="colLast">
 <div class="block">Sets the board view that displays the board</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCaseRules(java.util.List)">setCaseRules</a></span>&#8203;(java.util.List&lt;<a href="rules/CaseRule.html" title="class in edu.rpi.legup.model.rules">CaseRule</a>&gt;&nbsp;caseRules)</code></th>
 <td class="colLast">
 <div class="block">Sets the list of case rules</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setContradictionRules(java.util.List)">setContradictionRules</a></span>&#8203;(java.util.List&lt;<a href="rules/ContradictionRule.html" title="class in edu.rpi.legup.model.rules">ContradictionRule</a>&gt;&nbsp;contradictionRules)</code></th>
 <td class="colLast">
 <div class="block">Sets the list of contradiction rules</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCurrentBoard(edu.rpi.legup.model.gameboard.Board)">setCurrentBoard</a></span>&#8203;(<a href="gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;currentBoard)</code></th>
 <td class="colLast">
 <div class="block">Sets the current board</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDirectRules(java.util.List)">setDirectRules</a></span>&#8203;(java.util.List&lt;<a href="rules/DirectRule.html" title="class in edu.rpi.legup.model.rules">DirectRule</a>&gt;&nbsp;directRules)</code></th>
 <td class="colLast">
 <div class="block">Sets the list of direct rules</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFactory(edu.rpi.legup.model.gameboard.ElementFactory)">setFactory</a></span>&#8203;(<a href="gameboard/ElementFactory.html" title="class in edu.rpi.legup.model.gameboard">ElementFactory</a>&nbsp;factory)</code></th>
 <td class="colLast">
 <div class="block">Sets the ElementFactory associated with this edu.rpi.legup.puzzle</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTree(edu.rpi.legup.model.tree.Tree)">setTree</a></span>&#8203;(<a href="tree/Tree.html" title="class in edu.rpi.legup.model.tree">Tree</a>&nbsp;tree)</code></th>
 <td class="colLast">
@@ -767,6 +774,21 @@ implements <a href="observer/IBoardSubject.html" title="interface in edu.rpi.leg
 <dd><code>columns</code> - the number of columns on the board</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the given dimensions are valid for the given puzzle, false otherwise</dd>
+</dl>
+</li>
+</ul>
+<a id="isValidTextInput(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isValidTextInput</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isValidTextInput&#8203;(java.lang.String[]&nbsp;statements)</pre>
+<div class="block">Checks if the given array of statements is valid text input for the given puzzle</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>statements</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>

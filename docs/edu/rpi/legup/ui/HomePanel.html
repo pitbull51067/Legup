@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -287,47 +287,38 @@ extends <a href="LegupPanel.html" title="class in edu.rpi.legup.ui">LegupPanel</
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkallproof1()">checkallproof1</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkFolder()">checkFolder</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkfolder()">checkfolder</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>javax.swing.JMenuBar</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMenuBar()">getMenuBar</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isxmlfile(java.io.File)">isxmlfile</a></span>&#8203;(java.io.File&nbsp;file)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeVisible()">makeVisible</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openEditorWithNewPuzzle(java.lang.String,int,int)">openEditorWithNewPuzzle</a></span>&#8203;(java.lang.String&nbsp;game,
                        int&nbsp;rows,
                        int&nbsp;columns)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#traverseDir1(java.io.File,java.io.BufferedWriter,java.lang.String)">traverseDir1</a></span>&#8203;(java.io.File&nbsp;folder,
-            java.io.BufferedWriter&nbsp;writer,
-            java.lang.String&nbsp;path)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#use_xml_to_check()">use_xml_to_check</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openEditorWithNewPuzzle(java.lang.String,java.lang.String%5B%5D)">openEditorWithNewPuzzle</a></span>&#8203;(java.lang.String&nbsp;game,
+                       java.lang.String[]&nbsp;statements)</code></th>
+<td class="colLast">
+<div class="block">Opens the puzzle editor for the specified game with the given statements</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -424,27 +415,13 @@ extends <a href="LegupPanel.html" title="class in edu.rpi.legup.ui">LegupPanel</
 </dl>
 </li>
 </ul>
-<a id="checkfolder()">
+<a id="checkFolder()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>checkfolder</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;checkfolder()</pre>
-</li>
-</ul>
-<a id="use_xml_to_check()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>use_xml_to_check</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;use_xml_to_check()
-                      throws java.lang.Exception</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code></dd>
-</dl>
+<h4>checkFolder</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;checkFolder()</pre>
 </li>
 </ul>
 <a id="isxmlfile(java.io.File)">
@@ -454,37 +431,18 @@ extends <a href="LegupPanel.html" title="class in edu.rpi.legup.ui">LegupPanel</
 <li class="blockList">
 <h4>isxmlfile</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isxmlfile&#8203;(java.io.File&nbsp;file)</pre>
-</li>
-</ul>
-<a id="checkallproof1()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>checkallproof1</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;checkallproof1()</pre>
-</li>
-</ul>
-<a id="traverseDir1(java.io.File,java.io.BufferedWriter,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>traverseDir1</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;traverseDir1&#8203;(java.io.File&nbsp;folder,
-                         java.io.BufferedWriter&nbsp;writer,
-                         java.lang.String&nbsp;path)
-                  throws java.io.IOException</pre>
 <dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - - the input file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if it is a .xml file, else return false</dd>
 </dl>
 </li>
 </ul>
 <a id="openEditorWithNewPuzzle(java.lang.String,int,int)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>openEditorWithNewPuzzle</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;openEditorWithNewPuzzle&#8203;(java.lang.String&nbsp;game,
@@ -494,6 +452,22 @@ extends <a href="LegupPanel.html" title="class in edu.rpi.legup.ui">LegupPanel</
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="openEditorWithNewPuzzle(java.lang.String,java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>openEditorWithNewPuzzle</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;openEditorWithNewPuzzle&#8203;(java.lang.String&nbsp;game,
+                                    java.lang.String[]&nbsp;statements)</pre>
+<div class="block">Opens the puzzle editor for the specified game with the given statements</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>game</code> - a String containing the name of the game</dd>
+<dd><code>statements</code> - an array of statements</dd>
 </dl>
 </li>
 </ul>

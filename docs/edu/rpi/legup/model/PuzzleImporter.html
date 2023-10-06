@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var data = {"i0":6,"i1":6,"i2":10,"i3":10,"i4":10,"i5":6,"i6":6,"i7":6,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -204,25 +204,35 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#acceptsRowsAndColumnsInput()">acceptsRowsAndColumnsInput</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#acceptsTextInput()">acceptsTextInput</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createDefaultTree()">createDefaultTree</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createTree(org.w3c.dom.Node)">createTree</a></span>&#8203;(org.w3c.dom.Node&nbsp;node)</code></th>
 <td class="colLast">
 <div class="block">Creates the tree for the edu.rpi.legup.puzzle</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="Puzzle.html" title="class in edu.rpi.legup.model">Puzzle</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPuzzle()">getPuzzle</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the result of building the Puzzle</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeBoard(int,int)">initializeBoard</a></span>&#8203;(int&nbsp;rows,
                int&nbsp;columns)</code></th>
@@ -230,21 +240,26 @@ extends java.lang.Object</pre>
 <div class="block">Creates the board for building</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeBoard(java.lang.String%5B%5D)">initializeBoard</a></span>&#8203;(java.lang.String[]&nbsp;statements)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeBoard(org.w3c.dom.Node)">initializeBoard</a></span>&#8203;(org.w3c.dom.Node&nbsp;node)</code></th>
 <td class="colLast">
 <div class="block">Creates an empty board for building</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeProof(org.w3c.dom.Node)">initializeProof</a></span>&#8203;(org.w3c.dom.Node&nbsp;node)</code></th>
 <td class="colLast">
 <div class="block">Creates the proof for building</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializePuzzle(int,int)">initializePuzzle</a></span>&#8203;(int&nbsp;rows,
                 int&nbsp;columns)</code></th>
@@ -252,27 +267,32 @@ extends java.lang.Object</pre>
 <div class="block">Initializes an empty puzzle</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializePuzzle(java.lang.String%5B%5D)">initializePuzzle</a></span>&#8203;(java.lang.String[]&nbsp;statements)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializePuzzle(org.w3c.dom.Node)">initializePuzzle</a></span>&#8203;(org.w3c.dom.Node&nbsp;node)</code></th>
 <td class="colLast">
 <div class="block">Initializes the puzzle attributes</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#makeTransitionChanges(edu.rpi.legup.model.tree.TreeTransition,org.w3c.dom.Node)">makeTransitionChanges</a></span>&#8203;(<a href="tree/TreeTransition.html" title="class in edu.rpi.legup.model.tree">TreeTransition</a>&nbsp;transition,
                      org.w3c.dom.Node&nbsp;transElement)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCells(org.w3c.dom.Node)">setCells</a></span>&#8203;(org.w3c.dom.Node&nbsp;node)</code></th>
 <td class="colLast">
 <div class="block">Sets the puzzleElement from the xml document node</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validateTreeStructure(java.util.HashMap,java.util.HashMap)">validateTreeStructure</a></span>&#8203;(java.util.HashMap&lt;java.lang.String,&#8203;<a href="tree/TreeNode.html" title="class in edu.rpi.legup.model.tree">TreeNode</a>&gt;&nbsp;nodes,
                      java.util.HashMap&lt;java.lang.String,&#8203;<a href="tree/TreeTransition.html" title="class in edu.rpi.legup.model.tree">TreeTransition</a>&gt;&nbsp;transitions)</code></th>
@@ -345,6 +365,24 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="acceptsRowsAndColumnsInput()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acceptsRowsAndColumnsInput</h4>
+<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;acceptsRowsAndColumnsInput()</pre>
+</li>
+</ul>
+<a id="acceptsTextInput()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acceptsTextInput</h4>
+<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;acceptsTextInput()</pre>
+</li>
+</ul>
 <a id="initializePuzzle(int,int)">
 <!--   -->
 </a>
@@ -361,6 +399,22 @@ extends java.lang.Object</pre>
 <dd><code>columns</code> - number of columns on the puzzle</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.RuntimeException</code> - if puzzle can not be made</dd>
+</dl>
+</li>
+</ul>
+<a id="initializePuzzle(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializePuzzle</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;initializePuzzle&#8203;(java.lang.String[]&nbsp;statements)
+                      throws java.util.InputMismatchException,
+                             java.lang.IllegalArgumentException</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.util.InputMismatchException</code></dd>
+<dd><code>java.lang.IllegalArgumentException</code></dd>
 </dl>
 </li>
 </ul>
@@ -413,6 +467,22 @@ extends java.lang.Object</pre>
 <dd><code>node</code> - xml document node</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../save/InvalidFileFormatException.html" title="class in edu.rpi.legup.save">InvalidFileFormatException</a></code> - if file is invalid</dd>
+</dl>
+</li>
+</ul>
+<a id="initializeBoard(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeBoard</h4>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;initializeBoard&#8203;(java.lang.String[]&nbsp;statements)
+                              throws java.lang.UnsupportedOperationException,
+                                     java.lang.IllegalArgumentException</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.UnsupportedOperationException</code></dd>
+<dd><code>java.lang.IllegalArgumentException</code></dd>
 </dl>
 </li>
 </ul>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -197,6 +197,16 @@ extends <a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#acceptsRowsAndColumnsInput()">acceptsRowsAndColumnsInput</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#acceptsTextInput()">acceptsTextInput</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeBoard(int,int)">initializeBoard</a></span>&#8203;(int&nbsp;rows,
                int&nbsp;columns)</code></th>
@@ -204,7 +214,12 @@ extends <a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.
 <div class="block">Creates an empty board for building</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeBoard(java.lang.String%5B%5D)">initializeBoard</a></span>&#8203;(java.lang.String[]&nbsp;statements)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initializeBoard(org.w3c.dom.Node)">initializeBoard</a></span>&#8203;(org.w3c.dom.Node&nbsp;node)</code></th>
 <td class="colLast">
@@ -217,7 +232,7 @@ extends <a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;edu.rpi.legup.model.<a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.model">PuzzleImporter</a></h3>
-<code><a href="../../model/PuzzleImporter.html#createDefaultTree()">createDefaultTree</a>, <a href="../../model/PuzzleImporter.html#createTree(org.w3c.dom.Node)">createTree</a>, <a href="../../model/PuzzleImporter.html#getPuzzle()">getPuzzle</a>, <a href="../../model/PuzzleImporter.html#initializeProof(org.w3c.dom.Node)">initializeProof</a>, <a href="../../model/PuzzleImporter.html#initializePuzzle(int,int)">initializePuzzle</a>, <a href="../../model/PuzzleImporter.html#initializePuzzle(org.w3c.dom.Node)">initializePuzzle</a>, <a href="../../model/PuzzleImporter.html#makeTransitionChanges(edu.rpi.legup.model.tree.TreeTransition,org.w3c.dom.Node)">makeTransitionChanges</a>, <a href="../../model/PuzzleImporter.html#setCells(org.w3c.dom.Node)">setCells</a>, <a href="../../model/PuzzleImporter.html#validateTreeStructure(java.util.HashMap,java.util.HashMap)">validateTreeStructure</a></code></li>
+<code><a href="../../model/PuzzleImporter.html#createDefaultTree()">createDefaultTree</a>, <a href="../../model/PuzzleImporter.html#createTree(org.w3c.dom.Node)">createTree</a>, <a href="../../model/PuzzleImporter.html#getPuzzle()">getPuzzle</a>, <a href="../../model/PuzzleImporter.html#initializeProof(org.w3c.dom.Node)">initializeProof</a>, <a href="../../model/PuzzleImporter.html#initializePuzzle(int,int)">initializePuzzle</a>, <a href="../../model/PuzzleImporter.html#initializePuzzle(java.lang.String%5B%5D)">initializePuzzle</a>, <a href="../../model/PuzzleImporter.html#initializePuzzle(org.w3c.dom.Node)">initializePuzzle</a>, <a href="../../model/PuzzleImporter.html#makeTransitionChanges(edu.rpi.legup.model.tree.TreeTransition,org.w3c.dom.Node)">makeTransitionChanges</a>, <a href="../../model/PuzzleImporter.html#setCells(org.w3c.dom.Node)">setCells</a>, <a href="../../model/PuzzleImporter.html#validateTreeStructure(java.util.HashMap,java.util.HashMap)">validateTreeStructure</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -261,6 +276,32 @@ extends <a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="acceptsRowsAndColumnsInput()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acceptsRowsAndColumnsInput</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;acceptsRowsAndColumnsInput()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../model/PuzzleImporter.html#acceptsRowsAndColumnsInput()">acceptsRowsAndColumnsInput</a></code>&nbsp;in class&nbsp;<code><a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.model">PuzzleImporter</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="acceptsTextInput()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acceptsTextInput</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;acceptsTextInput()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../model/PuzzleImporter.html#acceptsTextInput()">acceptsTextInput</a></code>&nbsp;in class&nbsp;<code><a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.model">PuzzleImporter</a></code></dd>
+</dl>
+</li>
+</ul>
 <a id="initializeBoard(int,int)">
 <!--   -->
 </a>
@@ -284,7 +325,7 @@ extends <a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.
 <a id="initializeBoard(org.w3c.dom.Node)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>initializeBoard</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;initializeBoard&#8203;(org.w3c.dom.Node&nbsp;node)
@@ -297,6 +338,22 @@ extends <a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.
 <dd><code>node</code> - xml document node</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../save/InvalidFileFormatException.html" title="class in edu.rpi.legup.save">InvalidFileFormatException</a></code> - if file is invalid</dd>
+</dl>
+</li>
+</ul>
+<a id="initializeBoard(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>initializeBoard</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;initializeBoard&#8203;(java.lang.String[]&nbsp;statements)
+                     throws java.lang.UnsupportedOperationException</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../model/PuzzleImporter.html#initializeBoard(java.lang.String%5B%5D)">initializeBoard</a></code>&nbsp;in class&nbsp;<code><a href="../../model/PuzzleImporter.html" title="class in edu.rpi.legup.model">PuzzleImporter</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.UnsupportedOperationException</code></dd>
 </dl>
 </li>
 </ul>

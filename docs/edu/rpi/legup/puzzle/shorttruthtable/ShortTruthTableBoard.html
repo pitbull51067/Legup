@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10};
+var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,20 +224,36 @@ extends <a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.l
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCell(int,int)">getCell</a></span>&#8203;(int&nbsp;x,
+       int&nbsp;y)</code></th>
+<td class="colLast">
+<div class="block">Gets a <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.legup.model.gameboard"><code>GridCell</code></a> from the board.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCellFromElement(edu.rpi.legup.model.gameboard.PuzzleElement)">getCellFromElement</a></span>&#8203;(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;element)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCellsWithSymbol(char)">getCellsWithSymbol</a></span>&#8203;(char&nbsp;symbol)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatements()">getStatements</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyChange</a></span>&#8203;(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</code></th>
+<td class="colLast">
+<div class="block">Called when a <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard"><code>PuzzleElement</code></a> data on this has changed and passes in the equivalent puzzle element with
+ the new data.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -248,14 +264,14 @@ extends <a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.l
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;edu.rpi.legup.model.gameboard.<a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.legup.model.gameboard">GridBoard</a></h3>
-<code><a href="../../model/gameboard/GridBoard.html#getCell(int,int)">getCell</a>, <a href="../../model/gameboard/GridBoard.html#getDimension()">getDimension</a>, <a href="../../model/gameboard/GridBoard.html#getHeight()">getHeight</a>, <a href="../../model/gameboard/GridBoard.html#getWidth()">getWidth</a>, <a href="../../model/gameboard/GridBoard.html#setCell(int,int,edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setCell</a>, <a href="../../model/gameboard/GridBoard.html#setCell(int,int,edu.rpi.legup.model.gameboard.GridCell)">setCell</a></code></li>
+<code><a href="../../model/gameboard/GridBoard.html#getDimension()">getDimension</a>, <a href="../../model/gameboard/GridBoard.html#getHeight()">getHeight</a>, <a href="../../model/gameboard/GridBoard.html#getWidth()">getWidth</a>, <a href="../../model/gameboard/GridBoard.html#setCell(int,int,edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setCell</a>, <a href="../../model/gameboard/GridBoard.html#setCell(int,int,edu.rpi.legup.model.gameboard.GridCell)">setCell</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.edu.rpi.legup.model.gameboard.Board">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;edu.rpi.legup.model.gameboard.<a href="../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a></h3>
-<code><a href="../../model/gameboard/Board.html#addModifiedData(edu.rpi.legup.model.gameboard.PuzzleElement)">addModifiedData</a>, <a href="../../model/gameboard/Board.html#equalsBoard(edu.rpi.legup.model.gameboard.Board)">equalsBoard</a>, <a href="../../model/gameboard/Board.html#getElementCount()">getElementCount</a>, <a href="../../model/gameboard/Board.html#getModifiedData()">getModifiedData</a>, <a href="../../model/gameboard/Board.html#getPuzzleElement(edu.rpi.legup.model.gameboard.PuzzleElement)">getPuzzleElement</a>, <a href="../../model/gameboard/Board.html#getPuzzleElements()">getPuzzleElements</a>, <a href="../../model/gameboard/Board.html#isModifiable()">isModifiable</a>, <a href="../../model/gameboard/Board.html#isModified()">isModified</a>, <a href="../../model/gameboard/Board.html#mergedBoard(edu.rpi.legup.model.gameboard.Board,java.util.List)">mergedBoard</a>, <a href="../../model/gameboard/Board.html#notifyAddition(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyAddition</a>, <a href="../../model/gameboard/Board.html#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyChange</a>, <a href="../../model/gameboard/Board.html#notifyDeletion(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyDeletion</a>, <a href="../../model/gameboard/Board.html#removeModifiedData(edu.rpi.legup.model.gameboard.PuzzleElement)">removeModifiedData</a>, <a href="../../model/gameboard/Board.html#setModifiable(boolean)">setModifiable</a>, <a href="../../model/gameboard/Board.html#setPuzzleElement(int,edu.rpi.legup.model.gameboard.PuzzleElement)">setPuzzleElement</a>, <a href="../../model/gameboard/Board.html#setPuzzleElements(java.util.List)">setPuzzleElements</a></code></li>
+<code><a href="../../model/gameboard/Board.html#addModifiedData(edu.rpi.legup.model.gameboard.PuzzleElement)">addModifiedData</a>, <a href="../../model/gameboard/Board.html#equalsBoard(edu.rpi.legup.model.gameboard.Board)">equalsBoard</a>, <a href="../../model/gameboard/Board.html#getElementCount()">getElementCount</a>, <a href="../../model/gameboard/Board.html#getModifiedData()">getModifiedData</a>, <a href="../../model/gameboard/Board.html#getPuzzleElement(edu.rpi.legup.model.gameboard.PuzzleElement)">getPuzzleElement</a>, <a href="../../model/gameboard/Board.html#getPuzzleElements()">getPuzzleElements</a>, <a href="../../model/gameboard/Board.html#isModifiable()">isModifiable</a>, <a href="../../model/gameboard/Board.html#isModified()">isModified</a>, <a href="../../model/gameboard/Board.html#mergedBoard(edu.rpi.legup.model.gameboard.Board,java.util.List)">mergedBoard</a>, <a href="../../model/gameboard/Board.html#notifyAddition(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyAddition</a>, <a href="../../model/gameboard/Board.html#notifyDeletion(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyDeletion</a>, <a href="../../model/gameboard/Board.html#removeModifiedData(edu.rpi.legup.model.gameboard.PuzzleElement)">removeModifiedData</a>, <a href="../../model/gameboard/Board.html#setModifiable(boolean)">setModifiable</a>, <a href="../../model/gameboard/Board.html#setPuzzleElement(int,edu.rpi.legup.model.gameboard.PuzzleElement)">setPuzzleElement</a>, <a href="../../model/gameboard/Board.html#setPuzzleElements(java.util.List)">setPuzzleElements</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -319,6 +335,27 @@ extends <a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.l
 <pre class="methodSignature">public&nbsp;<a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a>&nbsp;getCellFromElement&#8203;(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;element)</pre>
 </li>
 </ul>
+<a id="getCell(int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCell</h4>
+<pre class="methodSignature">public&nbsp;<a href="ShortTruthTableCell.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableCell</a>&nbsp;getCell&#8203;(int&nbsp;x,
+                                   int&nbsp;y)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../model/gameboard/GridBoard.html#getCell(int,int)">GridBoard</a></code></span></div>
+<div class="block">Gets a <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.legup.model.gameboard"><code>GridCell</code></a> from the board.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../model/gameboard/GridBoard.html#getCell(int,int)">getCell</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.legup.model.gameboard">GridBoard</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - x location of the cell</dd>
+<dd><code>y</code> - y location of the cell</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>grid cell at location (x, y)</dd>
+</dl>
+</li>
+</ul>
 <a id="copy()">
 <!--   -->
 </a>
@@ -352,6 +389,24 @@ extends <a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.l
 <li class="blockList">
 <h4>copyStatementList</h4>
 <pre class="methodSignature">public static&nbsp;java.util.List&lt;<a href="ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a>&gt;&nbsp;copyStatementList&#8203;(java.util.List&lt;<a href="ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a>&gt;&nbsp;statements)</pre>
+</li>
+</ul>
+<a id="notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyChange</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;notifyChange&#8203;(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../model/gameboard/Board.html#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">Board</a></code></span></div>
+<div class="block">Called when a <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard"><code>PuzzleElement</code></a> data on this has changed and passes in the equivalent puzzle element with
+ the new data.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../model/gameboard/Board.html#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyChange</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>puzzleElement</code> - equivalent puzzle element with the new data.</dd>
+</dl>
 </li>
 </ul>
 <a id="toString()">
