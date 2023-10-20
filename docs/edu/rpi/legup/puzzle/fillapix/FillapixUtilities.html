@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,11 +176,55 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkBoardForContradiction(edu.rpi.legup.puzzle.fillapix.FillapixBoard)">checkBoardForContradiction</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static java.util.ArrayList&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAdjacentCells(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">getAdjacentCells</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></th>
+<td class="colLast">
+<div class="block">Gets all cells adjacent to a specific cell.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static java.util.ArrayList&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCellsAtDistance(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell,int)">getCellsAtDistance</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell,
+                  int&nbsp;distance)</code></th>
+<td class="colLast">
+<div class="block">Gets all cells that are contained in the square defined as having 'distance'
+ cells between the center and the outer wall.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static java.util.ArrayList&lt;boolean[]&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCombinations(int,int)">getCombinations</a></span>&#8203;(int&nbsp;chosenNumItems,
+               int&nbsp;totalNumItems)</code></th>
+<td class="colLast">
+<div class="block">Finds all possible combinations of <code>chosenNumObj</code> items can be
+ chosen from <code>totalNumObj</code> total items.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasEmptyAdjacent(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">hasEmptyAdjacent</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isComplete(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">isComplete</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+          <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isForcedBlack(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">isForcedBlack</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
              <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isForcedWhite(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">isForcedWhite</a></span>&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
              <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></th>
@@ -242,11 +286,95 @@ extends java.lang.Object</pre>
 <a id="isForcedWhite(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isForcedWhite</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;isForcedWhite&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
                                     <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</pre>
+</li>
+</ul>
+<a id="isComplete(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isComplete</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;isComplete&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                                 <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</pre>
+</li>
+</ul>
+<a id="hasEmptyAdjacent(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasEmptyAdjacent</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;hasEmptyAdjacent&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                                       <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</pre>
+</li>
+</ul>
+<a id="getAdjacentCells(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAdjacentCells</h4>
+<pre class="methodSignature">public static&nbsp;java.util.ArrayList&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;&nbsp;getAdjacentCells&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                                                                 <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</pre>
+<div class="block">Gets all cells adjacent to a specific cell. The cell itself will be included.</div>
+</li>
+</ul>
+<a id="getCellsAtDistance(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCellsAtDistance</h4>
+<pre class="methodSignature">public static&nbsp;java.util.ArrayList&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;&nbsp;getCellsAtDistance&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
+                                                                   <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell,
+                                                                   int&nbsp;distance)</pre>
+<div class="block">Gets all cells that are contained in the square defined as having 'distance'
+ cells between the center and the outer wall. For example, distance = 1:<p>
+ |X|X|X|X|X|          <p>
+ |X| | | |X|          <p>
+ |X| |O| |X|          <p>
+ |X| | | |X|          <p>
+ |X|X|X|X|X|          <p>
+ O is 'cell', and all 'X' will be returned in the ArrayList</div>
+</li>
+</ul>
+<a id="getCombinations(int,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCombinations</h4>
+<pre class="methodSignature">public static&nbsp;java.util.ArrayList&lt;boolean[]&gt;&nbsp;getCombinations&#8203;(int&nbsp;chosenNumItems,
+                                                             int&nbsp;totalNumItems)</pre>
+<div class="block">Finds all possible combinations of <code>chosenNumObj</code> items can be
+ chosen from <code>totalNumObj</code> total items.
+ For example, if 1 item is chosen from 2 possible items, the combinations 
+ are:
+ <pre>[ [true,false], [false,true] ]</pre></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>totalNumItems</code> - the total number of items that can possibly be chosen</dd>
+<dd><code>chosenNumItems</code> - the number of items to be chosen</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an ArrayList of Boolean arrays. Each index in the ArrayList represents
+ a distinct combination. Each Boolean array will be <code>totalNumItems</code>
+ long and each index will be <code>true</code> if the corresponding item is
+ included in that combination, and <code>false</code> otherwise.</dd>
+</dl>
+</li>
+</ul>
+<a id="checkBoardForContradiction(edu.rpi.legup.puzzle.fillapix.FillapixBoard)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>checkBoardForContradiction</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;checkBoardForContradiction&#8203;(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board)</pre>
 </li>
 </ul>
 </li>

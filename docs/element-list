@@ -13,6 +13,7 @@ edu.rpi.legup.puzzle
 edu.rpi.legup.puzzle.battleship
 edu.rpi.legup.puzzle.battleship.rules
 edu.rpi.legup.puzzle.fillapix
+edu.rpi.legup.puzzle.fillapix.elements
 edu.rpi.legup.puzzle.fillapix.rules
 edu.rpi.legup.puzzle.heyawake
 edu.rpi.legup.puzzle.heyawake.rules
