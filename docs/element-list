@@ -33,6 +33,7 @@ edu.rpi.legup.puzzle.shorttruthtable.rules.basic.introduction
 edu.rpi.legup.puzzle.shorttruthtable.rules.caserule
 edu.rpi.legup.puzzle.shorttruthtable.rules.contradiction
 edu.rpi.legup.puzzle.skyscrapers
+edu.rpi.legup.puzzle.skyscrapers.elements
 edu.rpi.legup.puzzle.skyscrapers.rules
 edu.rpi.legup.puzzle.sudoku
 edu.rpi.legup.puzzle.sudoku.elements

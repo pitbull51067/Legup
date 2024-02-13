@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -206,13 +206,27 @@ extends <a href="../../controller/ElementController.html" title="class in edu.rp
           <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;element)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mousePressed(java.awt.event.MouseEvent)">mousePressed</a></span>&#8203;(java.awt.event.MouseEvent&nbsp;e)</code></th>
+<td class="colLast">
+<div class="block">Invoked when a mouse button has been pressed on a component.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseReleased(java.awt.event.MouseEvent)">mouseReleased</a></span>&#8203;(java.awt.event.MouseEvent&nbsp;e)</code></th>
+<td class="colLast">
+<div class="block">Invoked when a mouse button has been released on a component.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.edu.rpi.legup.controller.ElementController">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;edu.rpi.legup.controller.<a href="../../controller/ElementController.html" title="class in edu.rpi.legup.controller">ElementController</a></h3>
-<code><a href="../../controller/ElementController.html#actionPerformed(java.awt.event.ActionEvent)">actionPerformed</a>, <a href="../../controller/ElementController.html#keyPressed(java.awt.event.KeyEvent)">keyPressed</a>, <a href="../../controller/ElementController.html#keyReleased(java.awt.event.KeyEvent)">keyReleased</a>, <a href="../../controller/ElementController.html#keyTyped(java.awt.event.KeyEvent)">keyTyped</a>, <a href="../../controller/ElementController.html#mouseClicked(java.awt.event.MouseEvent)">mouseClicked</a>, <a href="../../controller/ElementController.html#mouseDragged(java.awt.event.MouseEvent)">mouseDragged</a>, <a href="../../controller/ElementController.html#mouseEntered(java.awt.event.MouseEvent)">mouseEntered</a>, <a href="../../controller/ElementController.html#mouseExited(java.awt.event.MouseEvent)">mouseExited</a>, <a href="../../controller/ElementController.html#mouseMoved(java.awt.event.MouseEvent)">mouseMoved</a>, <a href="../../controller/ElementController.html#mousePressed(java.awt.event.MouseEvent)">mousePressed</a>, <a href="../../controller/ElementController.html#mouseReleased(java.awt.event.MouseEvent)">mouseReleased</a>, <a href="../../controller/ElementController.html#setBoardView(edu.rpi.legup.ui.boardview.BoardView)">setBoardView</a>, <a href="../../controller/ElementController.html#setSelectedElement(edu.rpi.legup.model.elements.Element)">setSelectedElement</a></code></li>
+<code><a href="../../controller/ElementController.html#actionPerformed(java.awt.event.ActionEvent)">actionPerformed</a>, <a href="../../controller/ElementController.html#keyPressed(java.awt.event.KeyEvent)">keyPressed</a>, <a href="../../controller/ElementController.html#keyReleased(java.awt.event.KeyEvent)">keyReleased</a>, <a href="../../controller/ElementController.html#keyTyped(java.awt.event.KeyEvent)">keyTyped</a>, <a href="../../controller/ElementController.html#mouseClicked(java.awt.event.MouseEvent)">mouseClicked</a>, <a href="../../controller/ElementController.html#mouseDragged(java.awt.event.MouseEvent)">mouseDragged</a>, <a href="../../controller/ElementController.html#mouseEntered(java.awt.event.MouseEvent)">mouseEntered</a>, <a href="../../controller/ElementController.html#mouseExited(java.awt.event.MouseEvent)">mouseExited</a>, <a href="../../controller/ElementController.html#mouseMoved(java.awt.event.MouseEvent)">mouseMoved</a>, <a href="../../controller/ElementController.html#setBoardView(edu.rpi.legup.ui.boardview.BoardView)">setBoardView</a>, <a href="../../controller/ElementController.html#setSelectedElement(edu.rpi.legup.model.elements.Element)">setSelectedElement</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -256,6 +270,44 @@ extends <a href="../../controller/ElementController.html" title="class in edu.rp
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="mousePressed(java.awt.event.MouseEvent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mousePressed</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;mousePressed&#8203;(java.awt.event.MouseEvent&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../controller/ElementController.html#mousePressed(java.awt.event.MouseEvent)">ElementController</a></code></span></div>
+<div class="block">Invoked when a mouse button has been pressed on a component.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>mousePressed</code>&nbsp;in interface&nbsp;<code>java.awt.event.MouseListener</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../controller/ElementController.html#mousePressed(java.awt.event.MouseEvent)">mousePressed</a></code>&nbsp;in class&nbsp;<code><a href="../../controller/ElementController.html" title="class in edu.rpi.legup.controller">ElementController</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event to be processed</dd>
+</dl>
+</li>
+</ul>
+<a id="mouseReleased(java.awt.event.MouseEvent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mouseReleased</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;mouseReleased&#8203;(java.awt.event.MouseEvent&nbsp;e)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../controller/ElementController.html#mouseReleased(java.awt.event.MouseEvent)">ElementController</a></code></span></div>
+<div class="block">Invoked when a mouse button has been released on a component.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>mouseReleased</code>&nbsp;in interface&nbsp;<code>java.awt.event.MouseListener</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../controller/ElementController.html#mouseReleased(java.awt.event.MouseEvent)">mouseReleased</a></code>&nbsp;in class&nbsp;<code><a href="../../controller/ElementController.html" title="class in edu.rpi.legup.controller">ElementController</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the event to be processed</dd>
+</dl>
+</li>
+</ul>
 <a id="changeCell(java.awt.event.MouseEvent,edu.rpi.legup.model.gameboard.PuzzleElement)">
 <!--   -->
 </a>

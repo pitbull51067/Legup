@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var data = {"i0":6,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../puzzle/battleship/BattleshipClue.html" title="class in edu.rpi.legup.puzzle.battleship">BattleshipClue</a></code>, <code><a href="GridCell.html" title="class in edu.rpi.legup.model.gameboard">GridCell</a></code>, <code><a href="../../puzzle/masyu/MasyuLine.html" title="class in edu.rpi.legup.puzzle.masyu">MasyuLine</a></code>, <code><a href="../../puzzle/shorttruthtable/ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a></code>, <code><a href="../../puzzle/skyscrapers/SkyscrapersClue.html" title="class in edu.rpi.legup.puzzle.skyscrapers">SkyscrapersClue</a></code>, <code><a href="../../puzzle/skyscrapers/SkyscrapersLine.html" title="class in edu.rpi.legup.puzzle.skyscrapers">SkyscrapersLine</a></code>, <code><a href="../../puzzle/treetent/TreeTentClue.html" title="class in edu.rpi.legup.puzzle.treetent">TreeTentClue</a></code>, <code><a href="../../puzzle/treetent/TreeTentLine.html" title="class in edu.rpi.legup.puzzle.treetent">TreeTentLine</a></code></dd>
+<dd><code><a href="../../puzzle/battleship/BattleshipClue.html" title="class in edu.rpi.legup.puzzle.battleship">BattleshipClue</a></code>, <code><a href="GridCell.html" title="class in edu.rpi.legup.model.gameboard">GridCell</a></code>, <code><a href="../../puzzle/masyu/MasyuLine.html" title="class in edu.rpi.legup.puzzle.masyu">MasyuLine</a></code>, <code><a href="../../puzzle/shorttruthtable/ShortTruthTableStatement.html" title="class in edu.rpi.legup.puzzle.shorttruthtable">ShortTruthTableStatement</a></code>, <code><a href="../../puzzle/skyscrapers/SkyscrapersClue.html" title="class in edu.rpi.legup.puzzle.skyscrapers">SkyscrapersClue</a></code>, <code><a href="../../puzzle/treetent/TreeTentClue.html" title="class in edu.rpi.legup.puzzle.treetent">TreeTentClue</a></code>, <code><a href="../../puzzle/treetent/TreeTentLine.html" title="class in edu.rpi.legup.puzzle.treetent">TreeTentLine</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">PuzzleElement&lt;T&gt;</span>
@@ -158,31 +158,36 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#casesDepended">casesDepended</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="PuzzleElement.html" title="type parameter in PuzzleElement">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#data">data</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#index">index</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGiven">isGiven</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isModifiable">isModifiable</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isModified">isModified</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid">isValid</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -249,41 +254,48 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCasesDepended()">getCasesDepended</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get the number of case rules that depend upon the state of this element</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="PuzzleElement.html" title="type parameter in PuzzleElement">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getData()">getData</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the data that represents this puzzle element.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndex()">getIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the index of this puzzle element</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGiven()">isGiven</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether this puzzle element is given</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isModifiable()">isModifiable</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether this puzzle element is modifiable.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isModified()">isModified</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether the puzzle element has been modified.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid()">isValid</a></span>()</code></th>
 <td class="colLast">
@@ -291,48 +303,55 @@ extends java.lang.Object</pre>
  this puzzle element is contained in.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCasesDepended(int)">setCasesDepended</a></span>&#8203;(int&nbsp;cases)</code></th>
+<td class="colLast">
+<div class="block">Sets the number of case rules that depend upon the state of this element</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setData(T)">setData</a></span>&#8203;(<a href="PuzzleElement.html" title="type parameter in PuzzleElement">T</a>&nbsp;data)</code></th>
 <td class="colLast">
 <div class="block">Sets the data value that represents this puzzle element.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGiven(boolean)">setGiven</a></span>&#8203;(boolean&nbsp;given)</code></th>
 <td class="colLast">
 <div class="block">Sets whether this puzzle element is given</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setIndex(int)">setIndex</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Sets the index of this puzzle element</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setModifiable(boolean)">setModifiable</a></span>&#8203;(boolean&nbsp;isModifiable)</code></th>
 <td class="colLast">
 <div class="block">Sets whether this puzzle element is modifiable.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setModified(boolean)">setModified</a></span>&#8203;(boolean&nbsp;isModified)</code></th>
 <td class="colLast">
 <div class="block">Sets whether the puzzle element has been modified.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setType</a></span>&#8203;(<a href="../elements/Element.html" title="class in edu.rpi.legup.model.elements">Element</a>&nbsp;e,
        java.awt.event.MouseEvent&nbsp;m)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValid(boolean)">setValid</a></span>&#8203;(boolean&nbsp;isValid)</code></th>
 <td class="colLast">
@@ -412,10 +431,19 @@ extends java.lang.Object</pre>
 <a id="isValid">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isValid</h4>
 <pre>protected&nbsp;boolean isValid</pre>
+</li>
+</ul>
+<a id="casesDepended">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>casesDepended</h4>
+<pre>protected&nbsp;int casesDepended</pre>
 </li>
 </ul>
 </li>
@@ -643,6 +671,34 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>isValid</code> - true if the puzzle element logically follows from the rule, otherwise false.</dd>
+</dl>
+</li>
+</ul>
+<a id="getCasesDepended()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCasesDepended</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getCasesDepended()</pre>
+<div class="block">Get the number of case rules that depend upon the state of this element</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>number of cases</dd>
+</dl>
+</li>
+</ul>
+<a id="setCasesDepended(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCasesDepended</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCasesDepended&#8203;(int&nbsp;cases)</pre>
+<div class="block">Sets the number of case rules that depend upon the state of this element</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cases</code> - number of cases</dd>
 </dl>
 </li>
 </ul>

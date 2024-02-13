@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -168,7 +168,7 @@ extends <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.le
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;edu.rpi.legup.model.gameboard.<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a></h3>
-<code><a href="../../model/gameboard/PuzzleElement.html#data">data</a>, <a href="../../model/gameboard/PuzzleElement.html#index">index</a>, <a href="../../model/gameboard/PuzzleElement.html#isGiven">isGiven</a>, <a href="../../model/gameboard/PuzzleElement.html#isModifiable">isModifiable</a>, <a href="../../model/gameboard/PuzzleElement.html#isModified">isModified</a>, <a href="../../model/gameboard/PuzzleElement.html#isValid">isValid</a></code></li>
+<code><a href="../../model/gameboard/PuzzleElement.html#casesDepended">casesDepended</a>, <a href="../../model/gameboard/PuzzleElement.html#data">data</a>, <a href="../../model/gameboard/PuzzleElement.html#index">index</a>, <a href="../../model/gameboard/PuzzleElement.html#isGiven">isGiven</a>, <a href="../../model/gameboard/PuzzleElement.html#isModifiable">isModifiable</a>, <a href="../../model/gameboard/PuzzleElement.html#isModified">isModified</a>, <a href="../../model/gameboard/PuzzleElement.html#isValid">isValid</a></code></li>
 </ul>
 </li>
 </ul>
@@ -227,6 +227,12 @@ extends <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.le
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setType</a></span>&#8203;(<a href="../../model/elements/Element.html" title="class in edu.rpi.legup.model.elements">Element</a>&nbsp;e,
+       java.awt.event.MouseEvent&nbsp;m)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.edu.rpi.legup.model.gameboard.GridCell">
@@ -240,7 +246,7 @@ extends <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.le
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;edu.rpi.legup.model.gameboard.<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a></h3>
-<code><a href="../../model/gameboard/PuzzleElement.html#equalsData(edu.rpi.legup.model.gameboard.PuzzleElement)">equalsData</a>, <a href="../../model/gameboard/PuzzleElement.html#getData()">getData</a>, <a href="../../model/gameboard/PuzzleElement.html#getIndex()">getIndex</a>, <a href="../../model/gameboard/PuzzleElement.html#isGiven()">isGiven</a>, <a href="../../model/gameboard/PuzzleElement.html#isModifiable()">isModifiable</a>, <a href="../../model/gameboard/PuzzleElement.html#isModified()">isModified</a>, <a href="../../model/gameboard/PuzzleElement.html#isValid()">isValid</a>, <a href="../../model/gameboard/PuzzleElement.html#setData(T)">setData</a>, <a href="../../model/gameboard/PuzzleElement.html#setGiven(boolean)">setGiven</a>, <a href="../../model/gameboard/PuzzleElement.html#setIndex(int)">setIndex</a>, <a href="../../model/gameboard/PuzzleElement.html#setModifiable(boolean)">setModifiable</a>, <a href="../../model/gameboard/PuzzleElement.html#setModified(boolean)">setModified</a>, <a href="../../model/gameboard/PuzzleElement.html#setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setType</a>, <a href="../../model/gameboard/PuzzleElement.html#setValid(boolean)">setValid</a></code></li>
+<code><a href="../../model/gameboard/PuzzleElement.html#equalsData(edu.rpi.legup.model.gameboard.PuzzleElement)">equalsData</a>, <a href="../../model/gameboard/PuzzleElement.html#getCasesDepended()">getCasesDepended</a>, <a href="../../model/gameboard/PuzzleElement.html#getData()">getData</a>, <a href="../../model/gameboard/PuzzleElement.html#getIndex()">getIndex</a>, <a href="../../model/gameboard/PuzzleElement.html#isGiven()">isGiven</a>, <a href="../../model/gameboard/PuzzleElement.html#isModifiable()">isModifiable</a>, <a href="../../model/gameboard/PuzzleElement.html#isModified()">isModified</a>, <a href="../../model/gameboard/PuzzleElement.html#isValid()">isValid</a>, <a href="../../model/gameboard/PuzzleElement.html#setCasesDepended(int)">setCasesDepended</a>, <a href="../../model/gameboard/PuzzleElement.html#setData(T)">setData</a>, <a href="../../model/gameboard/PuzzleElement.html#setGiven(boolean)">setGiven</a>, <a href="../../model/gameboard/PuzzleElement.html#setIndex(int)">setIndex</a>, <a href="../../model/gameboard/PuzzleElement.html#setModifiable(boolean)">setModifiable</a>, <a href="../../model/gameboard/PuzzleElement.html#setModified(boolean)">setModified</a>, <a href="../../model/gameboard/PuzzleElement.html#setValid(boolean)">setValid</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -293,6 +299,20 @@ extends <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.le
 <li class="blockList">
 <h4>getType</h4>
 <pre class="methodSignature">public&nbsp;<a href="SkyscrapersType.html" title="enum in edu.rpi.legup.puzzle.skyscrapers">SkyscrapersType</a>&nbsp;getType()</pre>
+</li>
+</ul>
+<a id="setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setType</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setType&#8203;(<a href="../../model/elements/Element.html" title="class in edu.rpi.legup.model.elements">Element</a>&nbsp;e,
+                    java.awt.event.MouseEvent&nbsp;m)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../model/gameboard/PuzzleElement.html#setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setType</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&lt;java.lang.Integer&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a id="getMax()">

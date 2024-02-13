@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,13 +238,22 @@ extends <a href="CaseRule_Generic.html" title="class in edu.rpi.legup.puzzle.sho
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dependentElements(edu.rpi.legup.model.gameboard.Board,edu.rpi.legup.model.gameboard.PuzzleElement)">dependentElements</a></span>&#8203;(<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board,
+                 <a href="../../../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</code></th>
+<td class="colLast">
+<div class="block">Returns the elements necessary for the cases returned by getCases(board,puzzleElement) to be valid
+ Overridden by case rules dependent on more than just the modified data</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../model/gameboard/CaseBoard.html" title="class in edu.rpi.legup.model.gameboard">CaseBoard</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCaseBoard(edu.rpi.legup.model.gameboard.Board)">getCaseBoard</a></span>&#8203;(<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board)</code></th>
 <td class="colLast">
 <div class="block">Gets the case board that indicates where this case rule can be applied on the given <a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard"><code>Board</code></a>.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCases(edu.rpi.legup.model.gameboard.Board,edu.rpi.legup.model.gameboard.PuzzleElement)">getCases</a></span>&#8203;(<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board,
         <a href="../../../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</code></th>
@@ -379,7 +388,7 @@ extends <a href="CaseRule_Generic.html" title="class in edu.rpi.legup.puzzle.sho
 <a id="getCases(edu.rpi.legup.model.gameboard.Board,edu.rpi.legup.model.gameboard.PuzzleElement)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getCases</h4>
 <pre class="methodSignature">public&nbsp;java.util.ArrayList&lt;<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&gt;&nbsp;getCases&#8203;(<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board,
@@ -393,6 +402,28 @@ extends <a href="CaseRule_Generic.html" title="class in edu.rpi.legup.puzzle.sho
 <dd><code>puzzleElement</code> - equivalent puzzleElement</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a list of elements the specified could be</dd>
+</dl>
+</li>
+</ul>
+<a id="dependentElements(edu.rpi.legup.model.gameboard.Board,edu.rpi.legup.model.gameboard.PuzzleElement)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>dependentElements</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;<a href="../../../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&gt;&nbsp;dependentElements&#8203;(<a href="../../../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a>&nbsp;board,
+                                                       <a href="../../../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</pre>
+<div class="block">Returns the elements necessary for the cases returned by getCases(board,puzzleElement) to be valid
+ Overridden by case rules dependent on more than just the modified data</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../model/rules/CaseRule.html#dependentElements(edu.rpi.legup.model.gameboard.Board,edu.rpi.legup.model.gameboard.PuzzleElement)">dependentElements</a></code>&nbsp;in class&nbsp;<code><a href="../../../../model/rules/CaseRule.html" title="class in edu.rpi.legup.model.rules">CaseRule</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>board</code> - board state at application</dd>
+<dd><code>puzzleElement</code> - selected puzzleElement</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>List of puzzle elements (typically cells) this application of the case rule depends upon.
+ Defaults to any element modified by any case</dd>
 </dl>
 </li>
 </ul>

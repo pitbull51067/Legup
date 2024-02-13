@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -234,34 +234,41 @@ extends <a href="TreeElement.html" title="class in edu.rpi.legup.model.tree">Tre
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSelection()">getSelection</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets he selected element associated with this transition</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isContradictoryBranch()">isContradictoryBranch</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Determines if this tree node leads to a contradiction.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCorrect()">isCorrect</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether this transition is correctly justified</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isJustified()">isJustified</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets whether this transition is justified</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isParent(edu.rpi.legup.model.tree.TreeNode)">isParent</a></span>&#8203;(<a href="TreeNode.html" title="class in edu.rpi.legup.model.tree">TreeNode</a>&nbsp;parent)</code></th>
 <td class="colLast">
 <div class="block">Determines if the specified tree node is a parent of this transition</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValidBranch()">isValidBranch</a></span>()</code></th>
 <td class="colLast">
@@ -270,67 +277,74 @@ extends <a href="TreeElement.html" title="class in edu.rpi.legup.model.tree">Tre
  and justified correctly</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#propagateAddition(edu.rpi.legup.model.gameboard.PuzzleElement)">propagateAddition</a></span>&#8203;(<a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Recursively propagates the addition of puzzleElement down the tree</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#propagateChange(edu.rpi.legup.model.gameboard.PuzzleElement)">propagateChange</a></span>&#8203;(<a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Recursively propagates the change of puzzleElement down the tree</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#propagateDeletion(edu.rpi.legup.model.gameboard.PuzzleElement)">propagateDeletion</a></span>&#8203;(<a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;element)</code></th>
 <td class="colLast">
 <div class="block">Recursively propagates the change of puzzleElement down the tree</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeParent(edu.rpi.legup.model.tree.TreeNode)">removeParent</a></span>&#8203;(<a href="TreeNode.html" title="class in edu.rpi.legup.model.tree">TreeNode</a>&nbsp;parent)</code></th>
 <td class="colLast">
 <div class="block">Removes a parent tree node to this tree transition</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reverify()">reverify</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Forces check of rule on this transition regardless if it has been cached already</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setChildNode(edu.rpi.legup.model.tree.TreeNode)">setChildNode</a></span>&#8203;(<a href="TreeNode.html" title="class in edu.rpi.legup.model.tree">TreeNode</a>&nbsp;childNode)</code></th>
 <td class="colLast">
 <div class="block">Sets the childNode tree node of this transition</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCorrect(boolean)">setCorrect</a></span>&#8203;(boolean&nbsp;isCorrect)</code></th>
 <td class="colLast">
 <div class="block">Sets whether this transition is correctly justified</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setParents(java.util.ArrayList)">setParents</a></span>&#8203;(java.util.ArrayList&lt;<a href="TreeNode.html" title="class in edu.rpi.legup.model.tree">TreeNode</a>&gt;&nbsp;parents)</code></th>
 <td class="colLast">
 <div class="block">Sets the parent tree nodes of this transition</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRule(edu.rpi.legup.model.rules.Rule)">setRule</a></span>&#8203;(<a href="../rules/Rule.html" title="class in edu.rpi.legup.model.rules">Rule</a>&nbsp;rule)</code></th>
 <td class="colLast">
 <div class="block">Sets the rule associated with this transition</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSelection(edu.rpi.legup.model.gameboard.PuzzleElement)">setSelection</a></span>&#8203;(<a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;selection)</code></th>
+<td class="colLast">
+<div class="block">Sets the selected element associated with this transition</div>
 </td>
 </tr>
 </table>
@@ -607,6 +621,34 @@ extends <a href="TreeElement.html" title="class in edu.rpi.legup.model.tree">Tre
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>rule</code> - rule of this transition</dd>
+</dl>
+</li>
+</ul>
+<a id="getSelection()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSelection</h4>
+<pre class="methodSignature">public&nbsp;<a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;getSelection()</pre>
+<div class="block">Gets he selected element associated with this transition</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>If this is a case rule, the selected element for that rule, null otherwise</dd>
+</dl>
+</li>
+</ul>
+<a id="setSelection(edu.rpi.legup.model.gameboard.PuzzleElement)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSelection</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setSelection&#8203;(<a href="../gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;selection)</pre>
+<div class="block">Sets the selected element associated with this transition</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>selection</code> - selected element for this transition</dd>
 </dl>
 </li>
 </ul>
